@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Mappe 1</string>
+    <string name="instructions">Unscramble the word using all the letters.</string>
+    <string name="skip">Hopp over</string>
+    <string name="submit">Svar</string>
+    <string name="problem_count">%d/10</string>
+    <string name="enter_your_answer">Legg inn svar</string>
+    <string name="congratulations">Gratulerer!</string>
+    <string name="exit">Avslutt</string>
+    <string name="play_again">Spill igjen</string>
+    <string name="wrong_answer">Feil svar!</string>
+
+    <string-array name="math_questions">
+        <item>2 + 3</item>
+        <item>5 + 4</item>
+        <item>7 + 1</item>
+        <item>3 + 3</item>
+        <item>8 + 0</item>
+        <item>4 + 5</item>
+        <item>6 + 2</item>
+        <item>1 + 9</item>
+        <item>5 + 5</item>
+        <item>7 + 2</item>
+        <item>3 + 6</item>
+        <item>8 + 1</item>
+        <item>2 + 2</item>
+        <item>4 + 3</item>
+        <item>6 + 4</item>
+    </string-array>
+
+    <string-array name="math_answers">
+        <item>5</item>
+        <item>9</item>
+        <item>8</item>
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+        <item>8</item>
+        <item>10</item>
+        <item>10</item>
+        <item>9</item>
+        <item>9</item>
+        <item>9</item>
+        <item>4</item>
+        <item>7</item>
+        <item>10</item>
+    </string-array>
+
+</resources>
