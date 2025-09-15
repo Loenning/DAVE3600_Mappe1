@@ -1,7 +1,10 @@
 package com.example.mappe1.ui
 
 data class GameUiState(
-    val currentMathQuestion: String = "",
+    val currentMathProblem: String = "",
+    val currentProblemCount: Int = 1,
+    val score: Int = 0,
+    val userAnswer: String = "",
     val isAnswerWrong: Boolean = false,
-    val currentProblemCount: Int = 1
+    val isGameOver: Boolean = false
 )

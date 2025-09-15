@@ -12,7 +12,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.mappe1.ui.AppNavigation
 import com.example.mappe1.ui.screens.GameScreen
+import com.example.mappe1.ui.screens.IntroScreen
 import com.example.mappe1.ui.theme.Mappe1Theme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +26,7 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                 ) {
-                    GameScreen()
+                    AppNavigation()
                 }
             }
         }

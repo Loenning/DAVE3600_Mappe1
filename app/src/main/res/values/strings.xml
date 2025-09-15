@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mappe 1</string>
+    <string name="app_name">Mattespill</string>
     <string name="instructions">Unscramble the word using all the letters.</string>
     <string name="skip">Hopp over</string>
     <string name="submit">Svar</string>
@@ -9,6 +9,12 @@
     <string name="exit">Avslutt</string>
     <string name="play_again">Spill igjen</string>
     <string name="wrong_answer">Feil svar!</string>
+    <string name="about_game">Om spillet</string>
+    <string name="preferances">Preferanser</string>
+    <string name="start_game">Start spill</string>
+    <string name="stop_game">Avslutt spill</string>
+
+
 
     <string-array name="math_questions">
         <item>2 + 3</item>
