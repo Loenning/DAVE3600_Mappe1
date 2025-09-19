@@ -16,70 +16,14 @@ import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun NumberButton(
-    text: String,
-    onClick: () -> Unit, // En funksjon for hva som skjer ved klikk
-    modifier: Modifier = Modifier // En standard modifier for ekstra fleksibilitet
-) {
-    Button(
-        onClick = onClick, // Bruk funksjonen som sendes inn
-        modifier = modifier
-            .size(64.dp) // All stil er samlet her
-            .padding(3.dp) // Padding er også her nå
-            .background(colorScheme.surfaceTint),
-        shape = RectangleShape, // Her definerer vi formen
-        colors = ButtonDefaults.buttonColors( // Og her definerer vi fargene
-            containerColor = Color.DarkGray,
-            contentColor = Color.White
-        )
-    ) {
-        Text(text = text)
-    }
-}
-
-
-
-@Composable
-fun ButtonRowTop(modifier: Modifier = Modifier){
-    Row {
-        NumberButton(onClick = { /*TODO*/ }, text = "0", modifier = modifier)
-        NumberButton(onClick = { /*TODO*/ }, text = "1", modifier = modifier)
-        NumberButton(onClick = { /*TODO*/ }, text = "2", modifier = modifier)
-        NumberButton(onClick = { /*TODO*/ }, text = "3", modifier = modifier)
-        NumberButton(onClick = { /*TODO*/ }, text = "4", modifier = modifier)
-    }
-}
-
-@Composable
-fun ButtonRowBottom(modifier: Modifier = Modifier){
-    Row {
-        NumberButton(onClick = { /*TODO*/ }, text = "5", modifier = modifier)
-        NumberButton(onClick = { /*TODO*/ }, text = "6", modifier = modifier)
-        NumberButton(onClick = { /*TODO*/ }, text = "7", modifier = modifier)
-        NumberButton(onClick = { /*TODO*/ }, text = "8", modifier = modifier)
-        NumberButton(onClick = { /*TODO*/ }, text = "9", modifier = modifier)
-    }
-}
-
-
-
-@Composable
-fun MenuButton(
-    text: String,
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier
+fun CustomButton(onClick: () -> Unit,
+                 modifier: Modifier = Modifier,
+                 content: @Composable () -> Unit
 ) {
     Button(
         onClick = onClick,
         modifier = modifier
-            .size(128.dp)
-            .padding(3.dp),
-        shape = RectangleShape,
-        colors = ButtonDefaults.buttonColors(
-            containerColor = Color.Yellow,
-            contentColor = Color.Green
-        )
     ) {
-        Text(text = text)
+        content()
     }
 }
